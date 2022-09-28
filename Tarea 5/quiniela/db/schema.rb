@@ -30,10 +30,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_28_051722) do
   end
 
   create_table "pools", force: :cascade do |t|
-    t.integer "team_id_1"
+    t.integer "team_1_id"
     t.integer "game_result_team_1_id"
-    t.integer "team_id_2"
-    t.integer "game_result_team_2"
+    t.integer "team_2_id"
+    t.integer "game_result_team_2_id"
     t.date "game_date"
     t.time "game_hour"
     t.datetime "created_at", null: false
@@ -46,6 +46,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_28_051722) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "team_id_id"
+    t.bigint "group_id_id"
+    t.index ["group_id_id"], name: "index_teams_on_group_id_id"
+    t.index ["team_id_id"], name: "index_teams_on_team_id_id"
   end
 
   create_table "users", force: :cascade do |t|

@@ -7,5 +7,7 @@ class CreateGames < ActiveRecord::Migration[7.0]
 
       t.timestamps
     end
+    add_reference :teams, :team_id, foreing_key: true
+    add_reference :teams, :group_id, foreing_key: true
   end
 end
