@@ -1,0 +1,40 @@
+BEGIN: designa el bloque de codigo a ejecutar
+END: prioridad a ejecutar antes de temrinar la ejecucion
+__ENCODING__: encriptacion actual
+__END__: indica el final de la seccion
+__FILE__: nombre del archivo a ejecutar
+__LINE__: numero de linea del archivo
+alias: duplicado de nombre para enviar un metodo
+and - &&: operador logico de 2 expreciones
+begin: junto con 'end' delimita el inicio-final del bloque - reasigna y rescata operaciones
+break: termina la ejecucion de un bloque 
+case: condiciones con multiples parametros
+class: crea una clase, al nombre, se pone la primera letra con MAYUSCULA
+defined?: verifica si hay algo definido/existente
+do: en conjunto con end, delimita la ejecucion de un bloque
+else: final de una lista de condificiones
+elseif: si contiene algun valor, introduce a la condificonal
+end: finaliza la ejecucion de ciclos, calses, condicionales
+ensure: se acciona cuando el codigo falla
+false: evalua booleanos
+for: ciclo complementado con in(rango)
+if: evalua argumentos 
+in: undefined :)
+module: crea un modulo de argumentos no visibles
+next: desglosa las interacciones de funciones
+nil: determina la ausencia de objetos
+not: negacion booleana
+or-||: operador logico de comparacion
+redo: ejecuta nuevamente un bloque de codigo
+rescue: maneja exepciones internas
+retry: re ejecuta un codigo de bloque 
+return: retorna el valor de lo que ejecuto
+self: recibe el mensaje de un valor no explicito
+super: busca a lo largo de un metodo de busqueda 
+then: metodo opcional para una condicional, ejecuta algo
+true: declara un booleano como true, no siempre es necesario, ruby retorna (casi siempre) los boleanos como true
+undef: undefine un metodo otorgado
+unless: a menos , el equivalente negativo
+when: cuando, ejecuta algo
+while: segun el argumento, realiza un ciclo mientras la condicion sea verdadera
+yield: cuando se llama dentro de un metodo complementa parte del mismo

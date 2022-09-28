@@ -1,0 +1,54 @@
+commands in rails
+rails: to see al options and commands }
+rails s/server: to run the application in the rails server
+rails new my_app: to create a new app in rails
+rails db:migrate: to create the structure in the migrate files
+rails db:create: to create a new schema of database
+rails db commands: show all the option to manage a db
+rails generate controller my_controller: creates a controller with another componens
+rails console --sandbox: to test code without chanching code
+rails dbconsole --db mydb: if we are used multiple db, this command connect to the primari db or using the name of the database we need to conected
+rails generate my_model: creates a model
+rails destroy my_model: destroy a model
+rails about: gives information about the versions of ruby, gems, rails, etc.
+rails routes: list all defined routes
+rails test: executes the miniframework called minitest to do test 
+rails app:update: after to update the rails version, run this command to create new files and changes the old files and sesion
+rails runner: this command execute request response cycle of our application for some thask which no deed to run at normal time, this comand can be used for import, export data, sending mails, scraping scripts.
+rails notes: searchs along all the code comments starting with TODO, FIXME or OPTIMIZE.
+rails tmp: is the directory of the rails app, store temporary files.
+rails new treehouse –template=India: this create a new app with a template
+commands in rvm
+rvm -v: shows the version of rvm
+rvm install 0.0.0: install a specific version of ruby
+rvm uninstall 0.0.0: to uninstall a specific version of ruby
+rvm list: show all installed versions of ruby by rvm
+rvm use 0.0.0: to temporary change a version 
+rvm use 0.0.0 --default: use the version as default across al sesions
+rvm reset: remove default and current settings
+rvm info: shows current ruby information
+rvm --force: force install, removes old installation
+rvm get stable: install the stable version
+commands of gem
+gem build bemspec: build a gem from gemspec
+gem cert: manage rubygems certificates and signing settings 
+gem check: check the gem depository for added or missing files
+gem cleanup: Clean up old versions of installed gems
+gem contents: list the contetns of the gem
+gem dependency: show the dependencies of installed gem
+gem environment: displays information about the rubygems environment
+gem fetch: download a gem in the current directory
+gem help: provide comamnd list help
+gem info: provide info of the gem
+commands in budle
+bundle install: instal the specific gemby the gemfile o gemfile.lock
+bundle update: update the dependencies
+bundle exec: execute a script in the current bundle
+bundle add: add the named gem to the gemfile and run bundle install
+bundle check: determine whether the requeriments for the app ared installed and aviable to bundler
+bundle show: show the source location of a particular gem
+bundle console: start an irb sesion in the current bundle
+bundle open: open an installed gem in the editor
+bundle lock: generate a lockfiles for your dependencies
+bundle viz: generate a visual representation of your dependencies
+bundle init: genetare a gemfile in the current path

@@ -1,0 +1,19 @@
+#Creacionales
+AbstracFactory: crea objetos relacionados sin especificar su estructura
+Builder: construye objetos complejos utiliando la estructura ya definida
+FactortyMethod: de la clase madre, permite la modificacion de la data en conjunto de su estructura interna
+Propotype: crea objetos en base a uno existente sin que la estructura depende de ella
+Singleton: verifica una unica instancia de una manera global
+
+#Estructurales
+Adapter: unifica difentes estructuras no relacionadas/incompatibles
+bridge: divide las estructuras con argumentos relacionados independientes
+composite: desglosa los objetos de una manera jerarquica individual
+decorator: inserta funciones encapsuladas 
+facade: agrupacion de metodos/funciones de una manera basica
+flyweight: equilibra las funcionalidades y el comportamiento de objetos para optimizar los recursos
+proxy: determina la funcionalidad de una solicitud antes de la que se acciona
+
+#e-grafias
+#https://www.slideshare.net/cloneofnachof/patrones-de-diseo-en-ruby-rubyconf-uruguay-2010
+#https://refactoring.guru/es/design-patterns/ruby

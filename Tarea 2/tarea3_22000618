@@ -1,0 +1,52 @@
+/*IF*/
+/*Se utiliza como un condicional para comparar 2 valor*/
+/*Si se cumple un valor, toma un ruta*/
+
+var cafe = 'lleno';
+if( cafe == 'lleno')
+  {
+    alert('Aun hay cafe, toma otro poco')
+  }
+
+/*IF ELSE*/
+/*Se utiliza como un condicional para comparar 2 valores*/
+/*Si se cumple un valor, toma un ruta*/
+/*Si no se toma un valor, toma otra ruta*/
+
+var cafe = 'vacio';
+if( cafe == 'lleno')
+  {
+    alert('Aun hay cafe, toma otro poco')
+  }
+  else
+  {
+    alert('Ya no hay cafe, hay que ir por mas!');
+  }
+  
+  
+/*IF ELSE IF ELSE*/
+/*Se utiliza como un condicional para comparar n valor*/
+/*Hasta que el valor recorra todos los IF ESLE*/
+/*Deraja de comparar n con las condicionales*/
+
+var cafe = 'jugo';
+if( cafe == 'cafe')
+  {
+    alert('Aun hay cafe, toma otro poco')
+  }
+else if( cafe == 'te')
+  {
+    alert('Aun hay te, toma otro poco');
+  }
+else if( cafe == 'jugo')
+  {
+    alert('Aun hay jugo, toma otro poco');
+  }
+else if( cafe == 'gaseosa')
+  {
+    alert('Aun hay gaseosa, toma otro poco');
+  }
+else
+  {
+    alert('No hay de eso');
+  }

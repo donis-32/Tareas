@@ -1,0 +1,3 @@
+var mensaje = '';
+mensaje  = prompt('Ingrese un valor: ');
+alert( 'El valor ingresado es: '+ mensaje + ' - 22000618 Jorge Luis Gomez Donis')

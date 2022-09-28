@@ -1,0 +1,26 @@
+var mes = '9';
+var estacion ='';
+
+if (mes == '12' || mes =='2' || mes == '1')
+   {
+     estacion = 'Es invierno';
+   }
+else if(mes == '3' || mes =='5')
+  {
+    estacion = 'Es primavera';
+  }
+
+else if(mes == '6' || mes =='8')
+  {
+    estacion = 'Es verano';
+  }
+else if(mes == '9' || mes =='11')
+  {
+    estacion = 'Es otoño';
+  }
+else
+  {
+    estacion = 'El valor no es valido';
+  }
+
+alert( estacion + ' - 22000618 Jorge Luis Gomez Donis')

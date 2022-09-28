@@ -1,0 +1,36 @@
+RVM definition
+
+Is the tool to create a save enviroment dedicated to a specific version of ruby, whit is own version of ruby and gems.
+The best characteristic of RVM is the avoid of confict whit versions, to prevent the dificult work to trace erros in case of conflicts whit versions
+
+In the development enviroment reduces the complexy of have diferents enviroments like testing, QA, production because if works in one enviroment, is the mirror 
+copy for the rest, in this case, rvm makes a identical copy to the others enviroments.
+
+In the case of the gems, rvm haves a gem managment called Gem Sets, this is the multiple administration ogf multi versions of the gems.
+
+
+
+
+Dictionary:
+copyleft: this refers to a license, and this is utilices to indicated all the retribution of the work by this license is holds by the original license
+
+
+License types:
+
+GPL (General Public License)
+
+License of free software(copyleft) publicated by the Free Software Foundation. The users of the GPL license are free to used, access to the code and modify
+and publish changes, allways this retributes the complete program to the same license.
+
+MIT (Massachisetts Insitute of Thecnology)
+This license granted to any person obtaining a copy of the software and the documentation files and this person can be licienced the software 
+like private or public software. 
+
+Some curius abut the MIT license is can be worked like a comertial license and get money for the software.
+
+Apache
+
+The apache license granted the freedom of download and use the apache software in his totality or some parts of the same, to a personal company
+or comertial ends.
+
+Apache license forbids use the trademarks in any way that be confirm that the Apache Foundation support the use.
