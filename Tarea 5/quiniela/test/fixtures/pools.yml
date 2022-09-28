@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  team_id_1: 1
+  game_result_team_1_id: 1
+  team_id_2: 1
+  game_result_team_2: 1
+  game_date: 2022-09-27
+  game_hour: 2022-09-27 23:00:31
+
+two:
+  team_id_1: 1
+  game_result_team_1_id: 1
+  team_id_2: 1
+  game_result_team_2: 1
+  game_date: 2022-09-27
+  game_hour: 2022-09-27 23:00:31

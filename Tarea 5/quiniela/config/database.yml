@@ -5,13 +5,6 @@ common: &common
   encondeing: unique
   reconnect: false
 
-default:
-  <<: *common
-  database: "quiniela"
-  username: "admin_quiniela"
-  password: "123456"
-  port: 5432
-
 development:
   <<: *common
   database: "quiniela_dev"
@@ -20,19 +13,8 @@ development:
   port: 5432
   
 test:
-  <<: *commo
+  <<: *common
   database: "quiniela_test"
   username: "admin_quiniela"
   password: "123456"
   port: 5432
-
-
-production:
-  <<: *common
-  database: "quiniela_production"
-  username: "admin_quiniela"
-  password: "123456"
-  port: 5432
-  
-  
-  
