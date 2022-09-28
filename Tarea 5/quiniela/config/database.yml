@@ -1,5 +1,4 @@
 common: &common
-
   pool: 30
   host: 127.0.0.1
   adapter: postgresql
@@ -8,31 +7,31 @@ common: &common
 
 default:
   <<: *common
-  database: <%= Rails.application.credentials.default_database %>
-  username: <%= Rails.application.credentials.default_username %>
-  password: <%= Rails.application.credentials.default_password %>
+  database: "quiniela"
+  username: "admin_quiniela"
+  password: "123456"
   port: 5432
 
 development:
   <<: *common
-  database: <%= Rails.application.credentials.dev_database %>
-  username: <%= Rails.application.credentials.dev_username %>
-  password: <%= Rails.application.credentials.dev_password %>
+  database: "quiniela_dev"
+  username: "admin_quiniela"
+  password: "123456"
   port: 5432
   
 test:
-  <<: *common
-  database: <%= Rails.application.credentials.test_database %>
-  username: <%= Rails.application.credentials.test_username %>
-  password: <%= Rails.application.credentials.test_password %>
-  
+  <<: *commo
+  database: "quiniela_test"
+  username: "admin_quiniela"
+  password: "123456"
   port: 5432
+
 
 production:
   <<: *common
-  database: <%= Rails.application.credentials.production_database %>
-  username: <%= Rails.application.credentials.production_username %>
-  password: <%= Rails.application.credentials.production_password %>
+  database: "quiniela_production"
+  username: "admin_quiniela"
+  password: "123456"
   port: 5432
   
   

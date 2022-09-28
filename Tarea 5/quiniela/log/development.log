@@ -84,3 +84,9 @@ Completed 200 OK in 33ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 625
   [1m[35m (199.1ms)[0m  [1m[35mCREATE DATABASE "quiniela_development" ENCODING = 'utf8'[0m
   [1m[35m (38.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "quiniela_development"[0m
   [1m[35m (215.3ms)[0m  [1m[35mCREATE DATABASE "quiniela_development" ENCODING = 'utf8'[0m
+  [1m[35m (380.9ms)[0m  [1m[35mCREATE DATABASE "quiniela_dev" ENCODING = 'utf8'[0m
+  [1m[35m (233.3ms)[0m  [1m[35mCREATE DATABASE "quiniela_test" ENCODING = 'utf8'[0m
+  [1m[35m (43.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "quiniela_dev"[0m
+  [1m[35m (40.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "quiniela_test"[0m
+  [1m[35m (234.5ms)[0m  [1m[35mCREATE DATABASE "quiniela_dev" ENCODING = 'utf8'[0m
+  [1m[35m (108.1ms)[0m  [1m[35mCREATE DATABASE "quiniela_test" ENCODING = 'utf8'[0m
