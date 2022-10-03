@@ -10,55 +10,55 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_28_051722) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_30_034045) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "games", force: :cascade do |t|
-    t.integer "team_id"
-    t.integer "group_id"
+    t.bigint "team_id"
+    t.bigint "group_id"
     t.integer "game_result"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "groups", force: :cascade do |t|
-    t.integer "team_id"
+    t.bigint "team_id"
     t.string "group_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "pools", force: :cascade do |t|
-    t.integer "team_1_id"
-    t.integer "game_result_team_1_id"
-    t.integer "team_2_id"
-    t.integer "game_result_team_2_id"
+    t.bigint "team_1_id"
+    t.bigint "game_result_team_1_id"
+    t.bigint "team_2_id"
+    t.bigint "game_result_team_2_id"
     t.date "game_date"
     t.time "game_hour"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "users_id"
-    t.index ["users_id"], name: "index_pools_on_users_id"
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_pools_on_user_id"
   end
 
   create_table "teams", force: :cascade do |t|
     t.string "name"
+    t.bigint "team_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "team_id_id"
-    t.bigint "group_id_id"
-    t.index ["group_id_id"], name: "index_teams_on_group_id_id"
-    t.index ["team_id_id"], name: "index_teams_on_team_id_id"
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "firts_name"
-    t.string "last_name"
-    t.string "user_name"
-    t.string "password"
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_atcle"
+    t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
 end
