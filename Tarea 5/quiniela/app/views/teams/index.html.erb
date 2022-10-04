@@ -1,14 +1,17 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Teams</h1>
-
-<div id="teams">
+<table border=1>
+  <tr>
+    <th>Nombre</th>
+    <th>Acciones</th>
+  </tr>
   <% @teams.each do |team| %>
-    <%= render team %>
-    <p>
-      <%= link_to "Show this team", team %>
-    </p>
+    <tr>
+        <td><%= team.name %></td>
+        <td><%= link_to "Show this team", team %></td>
+    </tr>
   <% end %>
-</div>
-
+</table>
+</br>
 <%= link_to "New team", new_team_path %>
