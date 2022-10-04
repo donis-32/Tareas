@@ -9529,3 +9529,14 @@ Processing by GroupsController#new as HTML
 Completed 200 OK in 24ms (Views: 8.4ms | ActiveRecord: 6.1ms | Allocations: 6742)
 
 
+Started GET "/groups/new" for 127.0.0.1 at 2022-10-03 20:29:22 -0600
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered groups/_form.html.erb (Duration: 2.5ms | Allocations: 857)
+  Rendered groups/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 937)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3351)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 4767)
+
+
