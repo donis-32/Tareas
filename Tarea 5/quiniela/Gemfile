@@ -17,7 +17,7 @@ gem "sprockets-rails"
 gem "pg", "~> 1.1"
 
 # Use to autenticate
-gem 'devise'
+gem 'devise', '~> 4.8'
 
 # Simple calculator
 gem 'gemacalc'

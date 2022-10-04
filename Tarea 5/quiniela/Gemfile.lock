@@ -245,7 +245,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
-  devise
+  devise (~> 4.8)
   gemacalc
   importmap-rails
   jbuilder

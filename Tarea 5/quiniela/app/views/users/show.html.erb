@@ -1,0 +1,30 @@
+<p style="color: green"><%= notice %></p>
+
+<%#= render @user %>
+<% if user_signed_in? %>
+<table>
+  <tr>
+    <td><p>Nombre:</p></td>
+    <td><%=@user.firts_name %></td>
+  </tr>
+  <tr>
+    <td><p>Apellido:</p></td>
+    <td><%=@user.last_name %></td>
+  </tr>
+  <tr>
+    <td><p>Usuario:</p></td>
+    <td><%=@user.user_name %></td>
+  </tr>
+  <tr>
+    <td><p>Correo:</p></td>
+    <td><%=@user.email %></td>
+  </tr>
+</table>
+
+<div>
+  <%= link_to "Edit this user", edit_user_path(@user) %> |
+  <%= link_to "Back to users", users_path %>
+
+  <%= button_to "Destroy this user", @user, method: :delete %>
+</div>
+<% end %>
